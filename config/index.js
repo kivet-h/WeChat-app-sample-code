@@ -3,7 +3,7 @@
  * @Document: https://taro-docs.jd.com/taro/docs/config-detail
  * @Author: kivet
  * @Date: 2021-05-11 18:39:59
- * @LastEditTime: 2021-06-15 11:17:10
+ * @LastEditTime: 2021-06-15 11:29:02
  */
 import { resolve } from 'path';
 
@@ -57,6 +57,15 @@ const config = {
         config: {
           namingPattern: 'module', // 转换模式，取值为 global/module
           generateScopedName: '[name]__[local]___[hash:base64:5]',
+        },
+      },
+    },
+    lessLoaderOption: {
+      lessOptions: {
+        strictMath: true,
+        noIeCompat: true,
+        modifyVars: {
+          hack: `true; @import "~@/styles/index.less";`,
         },
       },
     },

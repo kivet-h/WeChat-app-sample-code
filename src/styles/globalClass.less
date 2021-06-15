@@ -1,0 +1,39 @@
+/*
+ * @Description: 公共 class 样式
+ * @Author: kivet
+ * @Date: 2021-06-04 11:36:40
+ * @LastEditTime: 2021-06-15 11:31:24
+ */
+
+/**
+ * 单行/多行文本
+ * 超出 @line 行省略号，默认超出 2 行显示
+ */
+.text-ellipsis(@line: 2) {
+  display: -webkit-box !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  word-break: break-all;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: @line !important;
+}
+
+/**
+ * flex 布局
+ * 简化 align-items、justify-content 两属性设置
+ */
+.flex-layout(@ai: stretch, @jc: flex-start) {
+  display: flex;
+  align-items: @ai;
+  justify-content: @jc;
+}
+
+/**
+ * 默认页面样式
+ */
+.page-default {
+  padding: 30px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
