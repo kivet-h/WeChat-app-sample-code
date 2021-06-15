@@ -11,7 +11,14 @@
       "list": []
     },
     "miniprogram": {
-      "list": []
+      "list": [
+        {
+          "name": "列表",
+          "pathName": "pages/List/index",
+          "query": "",
+          "scene": null
+        }
+      ]
     }
   }
 }

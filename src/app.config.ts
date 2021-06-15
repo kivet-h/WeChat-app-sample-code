@@ -4,6 +4,11 @@ export default {
     'pages/Home/index',
     // tabbar - 问题列表
     'pages/List/index',
+
+    // 页面返回向前一页面传值，前一页面
+    'pages/PageBackWithParams/index',
+    // 页面返回向前一页面传值，后一页面
+    'pages/PageBackWithParams/PageBackWithParamsB/index',
   ],
   window: {
     backgroundTextStyle: 'light',
@@ -27,7 +32,7 @@ export default {
         selectedIconPath: './assets/tabbar/icon_home_sel.png',
       },
       {
-        text: '个人',
+        text: '问题列表',
         pagePath: 'pages/List/index',
         iconPath: './assets/tabbar/icon_mine_nor.png',
         selectedIconPath: './assets/tabbar/icon_mine_sel.png',
